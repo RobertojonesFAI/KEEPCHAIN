@@ -25,7 +25,7 @@ import javax.swing.*;
 /**
  * KeepChain initial prototype, generate user using seed phrases, then use program to manage stored passwords under your user.
  * 
- * @Author Roberto Jones, Travis Goodrich.
+ * @Author Roberto Jones, Travis Goodrich, Wesley Homer.
  */
 
 public class SeedLoginGUI {
@@ -187,7 +187,7 @@ public class SeedLoginGUI {
             }
     
     
-            String credential = website + "|" + username + "|" + password;
+            String credential = "Website Address: " + website + " | Username: " + username + " | Password: " + password;
             try {
                 addPasswordToFile(currentUserFile, currentKey, credential);
                 JOptionPane.showMessageDialog(frame, "Credential added successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
